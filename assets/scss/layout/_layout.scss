@@ -1,0 +1,64 @@
+.content {
+    padding: 0 calc(100% / 6);
+    position: relative;
+    z-index: 40;
+}
+
+.text {
+
+    h2 {
+        position: relative;
+        padding-left: 10px;
+        margin: 20px 0;
+    }
+
+    &.dark {
+        h2 {
+            color: $color-text-dark-theme;
+        }
+    }
+
+    h3 {
+        padding-left: 10px;
+        color: $color-primary;
+        margin: 20px 0;
+    }
+
+    h4 {
+        padding-left: 10px;
+        margin: 20px 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: $color-primary;
+        }
+    }
+}
+
+
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
